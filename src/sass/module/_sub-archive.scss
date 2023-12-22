@@ -1,19 +1,19 @@
 @use "global" as *;
 
 .sub-archive {
-        margin-top: rem(50);
-    @include mq(md) {
-        margin-top: rem(100);
-    }
+    //     margin-top: rem(50);
+    // @include mq(md) {
+    //     margin-top: rem(100);
+    // }
 }
 
 .sub-archive__inner {
-    display: block;
-    @include mq(md) {
-        display: flex;
-        gap: rem(40);
-        justify-content: space-between;
-    }
+    // display: block;
+    // @include mq(md) {
+    //     display: flex;
+    //     gap: rem(40);
+    //     justify-content: space-between;
+    // }
 }
 
 .sub-archive__inner.inner {
@@ -36,7 +36,7 @@
 
 .sub-archive__wrapper {
     @include mq(md) {
-        width: calc( 706 / 1080 * 100%);
+        // width: calc( 706 / 1080 * 100%);
     }
 }
 .sub-archive__wrapper--detail {
@@ -46,11 +46,11 @@
 }
 
 .sub-archive__sideber {
-    margin-top: rem(20);
-    @include mq(md) {
-        width: calc( 294 / 1080 * 100%);
-        margin-top: rem(48);
-    }
+    // margin-top: rem(20);
+    // @include mq(md) {
+    //     width: calc( 294 / 1080 * 100%);
+    //     margin-top: rem(48);
+    // }
 }
 
 .sub-archive__pagenation  {

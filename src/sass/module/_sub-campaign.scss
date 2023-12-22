@@ -1,16 +1,5 @@
 @use "global" as *;
 
-.sub-campaign {
-    position: relative;
-}
-
-.sub-campaign__inner {
-    position: relative;
-    margin-top: rem(48);
-    @include mq(md) {
-        margin-top: rem(146);
-    }
-}
 
 .sub-campaign__menu {
     @include mq(md) {

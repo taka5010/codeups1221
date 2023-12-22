@@ -1,15 +1,15 @@
 @use "global" as *;
 
 .sub-information {
-  position: relative;
-  margin-top: rem(50);
-  padding-top: rem(70);
-  padding-bottom: rem(84);
+  // position: relative;
+  // margin-top: rem(50);
+  // padding-top: rem(70);
+  // padding-bottom: rem(84);
   z-index: initial;
   @include mq(md) {
-    margin-top: rem(50);
-    padding-top: rem(100);
-    padding-bottom: rem(102);
+    // margin-top: rem(50);
+    // padding-top: rem(100);
+    // padding-bottom: rem(102);
     z-index: initial;
   }
 }
@@ -214,12 +214,12 @@
   line-height: calc( 24 / 16);
 }
 
-.sub-information__contact {
-    margin-top: rem(17);
-    @include mq(md) {
-      margin-top: rem(40);
-    }
-}
+// .sub-information__contact {
+//     margin-top: rem(17);
+//     @include mq(md) {
+//       margin-top: rem(40);
+//     }
+// }
 
 
 

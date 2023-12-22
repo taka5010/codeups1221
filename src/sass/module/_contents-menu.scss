@@ -29,7 +29,8 @@
     background-color: $white;
 }
 
-.contents-menu__item:hover {
+.contents-menu__item:hover,
+.contents-menu__item.active {
     background-color: $green;
     color: $white;
     transition: 0.5s;

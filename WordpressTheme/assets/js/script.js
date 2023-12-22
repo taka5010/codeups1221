@@ -133,6 +133,16 @@ jQuery(function ($) {
     $(window).scrollTop(scrollPosition);
   });
 
+  // campaignページ・voiceページのメニューのハイライト実装
+  var items = $('.contents-menu__item');
+  $(items[1]).addClass('active');
+  items.each(function () {
+    $(this).on('click', function () {
+      items.removeClass('active');
+      $(this).addClass('active');
+    });
+  });
+
   //faq-page ----------------------------
   var accordionDetails = '.js-faq-item';
   var accordionSummary = '.js-faq-item__summary';
