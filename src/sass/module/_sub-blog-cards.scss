@@ -1,14 +1,12 @@
 @use "global" as *;
 
-.sub-blog-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: rem(40);
-    @include mq(md) {
-
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: rem(40);
-
-        row-gap: rem(70);
-    }
-}
+// .sub-blog-cards {
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     row-gap: rem(40);
+//     @include mq(md) {
+//         grid-template-columns: repeat(2, 1fr);
+//         column-gap: rem(40);
+//         row-gap: rem(70);
+//     }
+// }

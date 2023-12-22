@@ -1,15 +1,23 @@
 @use "global" as *;
 
 .sub-price {
-    margin-top: rem(50);
-    @include mq(md) {
-        margin-top: rem(100);
-    }
+    // margin-top: rem(50);
+    // @include mq(md) {
+    //     margin-top: rem(100);
+    // }
 }
 
-.sub-price__inner {
+.sub-price__inner.inner{
+    border-collapse:collapse;
+    max-width: rem(600);
+    width: 100%;
     @include mq(md) {
-        padding-top: rem(48);
+        max-width: rem(700);
+        margin-left: auto;
+        margin-right: auto;
+        // padding-top: rem(48);
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
