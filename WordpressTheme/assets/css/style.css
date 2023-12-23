@@ -2477,6 +2477,10 @@ textarea {
 	transform: rotate(90deg) translate(-0.4375rem, 0.1875rem);
 }
 
+.sideber__month {
+	display: none;
+}
+
 .sideber__month li {
 	margin-top: 0.1875rem;
 	padding-left: 3.5rem;
