@@ -4,21 +4,18 @@
 }
 
 .sub-terms__content {
-    margin-top: rem(46);
     line-height: 2;
     position: relative;
+
+}
+
+.sub-terms__inner.inner {
     @include mq(md) {
         max-width: rem(800);
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: rem(106);
-        padding-top: rem(37);
     }
-}
-
-.sub-terms__inner {
-
 }
 
 .sub-terms__unit {

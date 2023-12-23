@@ -3,9 +3,6 @@
 .sub-thanks {
     text-align: center;
     line-height: 1.4;
-    @include mq(md) {
-        padding-top: rem(45);
-    }
 }
 
 .sub-thanks__text + .sub-thanks__text {

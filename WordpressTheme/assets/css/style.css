@@ -2664,10 +2664,6 @@ textarea {
 	position: relative;
 }
 
-.sub-about {
-	margin-top: 3.125rem;
-}
-
 .sub-about__wrapper {
 	position: relative;
 }
@@ -3055,7 +3051,6 @@ textarea {
 
 .sub-terms__content {
 	line-height: 2;
-	margin-top: 2.875rem;
 	position: relative;
 }
 
@@ -4449,10 +4444,6 @@ select {
 	grid-template-columns: 65.3703703704% 27.2222222222%;
 }
 
-.sub-about {
-	margin-top: 9.0625rem;
-}
-
 .sub-about__left-image {
 	display: block;
 	width: 36.9444444444%;
@@ -4620,7 +4611,6 @@ select {
 
 .sub-faq__inner.inner {
 	max-width: 46.875rem;
-	padding-top: 3.125rem;
 	width: 100%;
 }
 
@@ -4769,7 +4759,6 @@ select {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 50rem;
-	padding-top: 2.3125rem;
 	width: 100%;
 }
 
@@ -4790,12 +4779,10 @@ select {
 	margin-top: 6.875rem;
 }
 
-.sub-terms__content {
+.sub-terms__inner.inner {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 6.625rem;
 	max-width: 50rem;
-	padding-top: 2.3125rem;
 	width: 100%;
 }
 
@@ -4805,10 +4792,6 @@ select {
 
 .sub-terms__contact {
 	margin-top: 8.25rem;
-}
-
-.sub-thanks {
-	padding-top: 2.8125rem;
 }
 
 .sub-thanks__footer {

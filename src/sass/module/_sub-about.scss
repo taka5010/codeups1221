@@ -1,10 +1,7 @@
 @use "global" as *;
 
 .sub-about {
-    margin-top: rem(50);
-    @include mq(md) {
-      margin-top: rem(145);
-    }
+
   }
 
 .sub-about__wrapper {
