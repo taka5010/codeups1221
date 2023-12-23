@@ -3,15 +3,13 @@
 .sub-privacy {
 }
 
-.sub-privacy__content {
-    margin-top: rem(46);
+.sub-privacy__inner.inner {
     line-height: 2;
     @include mq(md) {
         max-width: rem(800);
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: rem(106);
         padding-top: rem(37);
     }
 }

@@ -2840,10 +2840,6 @@ textarea {
 	width: 32%;
 }
 
-.sub-faq {
-	margin-top: 3.125rem;
-}
-
 .sub-information {
 	z-index: auto;
 	z-index: initial;
@@ -3011,9 +3007,8 @@ textarea {
 	margin-top: 6.25rem;
 }
 
-.sub-privacy__content {
+.sub-privacy__inner.inner {
 	line-height: 2;
-	margin-top: 2.875rem;
 }
 
 .sub-privacy__unit {
@@ -3038,13 +3033,7 @@ textarea {
 	padding-right: 1.25rem;
 }
 
-.sub-sitemap__content {
-	margin: auto;
-	width: 100%;
-}
-
 .sub-sitemap__lists {
-	margin-top: 2.5rem;
 	position: relative;
 }
 
@@ -4629,10 +4618,6 @@ select {
 	width: 26.5486725664%;
 }
 
-.sub-faq {
-	margin-top: 6.25rem;
-}
-
 .sub-faq__inner.inner {
 	max-width: 46.875rem;
 	padding-top: 3.125rem;
@@ -4780,10 +4765,9 @@ select {
 	margin-top: 7.5rem;
 }
 
-.sub-privacy__content {
+.sub-privacy__inner.inner {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 6.625rem;
 	max-width: 50rem;
 	padding-top: 2.3125rem;
 	width: 100%;
@@ -4800,10 +4784,6 @@ select {
 .sub-sitemap__inner.inner {
 	padding-left: 1.5625rem;
 	padding-right: 1.5625rem;
-}
-
-.sub-sitemap__lists {
-	padding-top: 2.125rem;
 }
 
 .sub-sitemap__contact {
