@@ -1516,6 +1516,10 @@ footer {
 	padding-bottom: 1.5rem;
 }
 
+.form dl:first-child {
+	margin-top: 0;
+}
+
 .form dd {
 	margin-top: 0.9375rem;
 	width: 100%;
@@ -1575,6 +1579,22 @@ footer {
 	top: 0;
 	transform: translateY(0);
 	width: 1.375rem;
+}
+
+.form__confirmation [type=checkbox]:checked + span::after {
+	border-bottom: 3px solid #f00;
+	border-left: 3px solid #f00;
+	content: "";
+	display: block;
+	height: 0.5625rem;
+	left: 0.125rem;
+	margin-left: 0.1em;
+	margin-top: -0.1em;
+	opacity: 1;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate(-45deg);
+	width: 1rem;
 }
 
 .hamburger {
@@ -2449,7 +2469,12 @@ textarea {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+	transition: ease 0.3s;
 	width: 1.5rem;
+}
+
+.sideber__year.is-open::before {
+	transform: rotate(90deg) translate(-0.4375rem, 0.1875rem);
 }
 
 .sideber__month li {
@@ -2470,6 +2495,12 @@ textarea {
 	top: 50%;
 	transform: translateY(-50%);
 	width: 1.5rem;
+}
+
+.sideber__month a {
+	display: block;
+	height: 100%;
+	width: 100%;
 }
 
 .sideber__btn {
@@ -2773,7 +2804,7 @@ textarea {
 	margin-top: 6.375rem;
 }
 
-.sub-contact__form {
+.sub-contact__inner.inner {
 	width: 100%;
 }
 
@@ -4573,11 +4604,12 @@ select {
 	margin-top: 8.8125rem;
 }
 
-.sub-contact__form {
+.sub-contact__inner.inner {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 43.75rem;
-	padding-top: 0.5625rem;
+	padding: 0;
+	padding-top: 0rem;
 	width: 100%;
 }
 

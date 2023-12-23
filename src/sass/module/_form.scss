@@ -19,6 +19,9 @@
 		margin-top: rem(40);
 	}
 }
+.form dl:first-child {
+	margin-top: 0;
+}
 
 // .form dl:nth-child(n + 2) {
 // 	margin-top: rem(23);
@@ -99,4 +102,19 @@
 	height: rem(22);
 }
 
+.form__confirmation [type=checkbox]:checked + span::after {
+    border-bottom: 3px solid #f00;
+    border-left: 3px solid #f00;
+    content: "";
+    display: block;
+    height: rem(9);
+    left: rem(2);
+    margin-left: 0.1em;
+    margin-top: -0.1em;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    width: rem(16);
+}
 

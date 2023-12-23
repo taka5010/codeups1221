@@ -4,14 +4,15 @@
 
 }
 
-. {
+.sub-contact__inner.inner {
     width: 100%;
     @include mq(md) {
 		max-width: rem(700);
 		width: 100%;
 		margin-right: auto;
 		margin-left: auto;
-        padding-top: rem(9);
+        padding-top: rem(0);
+		padding: 0;
         
 	}
 

@@ -109,6 +109,7 @@
 .sideber__year {
     position: relative;
     padding-left: rem(32);
+    
 }
 .sideber__year::before {
     position: absolute;
@@ -122,8 +123,16 @@
     top:50%;
     transform: translateY(-50%);
     left: rem(6);
-    
+    transition: ease 0.3s;
 }
+
+.sideber__year.is-open::before  {
+    transform: rotate(90deg) translate(rem(-7), rem(3));
+}
+
+// .sideber__month {
+//     display: none;
+//   }
 
 .sideber__month  li {
     position: relative;
@@ -145,8 +154,13 @@
     left: rem(30);
 }
 
+.sideber__month a {
+    display: block;
+    height: 100%;
+    width: 100%
+}
+
 .sideber__btn {
     text-align: center;
     margin-top: rem(40);
-
 }

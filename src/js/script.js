@@ -1,13 +1,25 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
-    //ナビバートグル
+    
+    // $('.js-hamburger').on('click', function () {
+    //   $("body").toggleClass("active");
+    //   if ($('.js-hamburger').hasClass('is-open')) {
+    //     $('.js-drawer-menu').fadeOut();
+    //     $(this).removeClass('is-open');
+    //   } else {
+    //     $('.js-drawer-menu').fadeIn();
+    //     $(this).addClass('is-open');
+    //   }
+    // });
+//ハンバーガーメニュークリックでメニューのモーダル
     $('.js-hamburger').on('click', function () {
-      $("body").toggleClass("active");
       if ($('.js-hamburger').hasClass('is-open')) {
+        $("body").css("overflow", "auto");
         $('.js-drawer-menu').fadeOut();
         $(this).removeClass('is-open');
       } else {
+        $("body").css("overflow", "hidden");
         $('.js-drawer-menu').fadeIn();
         $(this).addClass('is-open');
       }
@@ -102,26 +114,41 @@ $(function() {
 
 //about-page ----------------------------
   // galleryのモーダル
+  // $(".js-modal img").click(function () {
+  //   $(".about-gallery__grayDisplay").html($(this).prop("outerHTML"));
+  //   $(".about-gallery__grayDisplay").fadeIn(200);
+  //   return false;
+  // });
+  // $(".about-gallery__grayDisplay").click(function () {
+  //   $(".about-gallery__grayDisplay").fadeOut(200);
+  //   return false;
+  // });
+
   $(".js-modal img").click(function () {
+    $("body").css("overflow", "hidden");
     $(".about-gallery__grayDisplay").html($(this).prop("outerHTML"));
     $(".about-gallery__grayDisplay").fadeIn(200);
     return false;
   });
   $(".about-gallery__grayDisplay").click(function () {
+    $("body").css("overflow", "auto");
     $(".about-gallery__grayDisplay").fadeOut(200);
     return false;
   });
 
+
+
+
   // モーダル展開時に背景をスクロールさせない
-  let scrollPosition;
-  $(".js-modal img").on("click", function () {
-    scrollPosition = $(window).scrollTop();
-    $("body").addClass("about-gallery__fixed").css({ top: -scrollPosition });
-  });
-  $(".about-gallery__grayDisplay").on("click", function () {
-    $("body").removeClass("about-gallery__fixed").css({ top: 0 });
-    $(window).scrollTop(scrollPosition);
-  });
+  // let scrollPosition;
+  // $(".js-modal img").on("click", function () {
+  //   scrollPosition = $(window).scrollTop();
+  //   $("body").addClass("about-gallery__fixed").css({ top: -scrollPosition });
+  // });
+  // $(".about-gallery__grayDisplay").on("click", function () {
+  //   $("body").removeClass("about-gallery__fixed").css({ top: 0 });
+  //   $(window).scrollTop(scrollPosition);
+  // });
 
   // campaignページ・voiceページのメニューのハイライト実装
   var items = $('.contents-menu__item');
@@ -160,7 +187,6 @@ $(function() {
     })
   });
 
-
 // リンク先でヘッダーの重なりを防ぐ
   const url = $(location).attr('href'),
 	headerHeight = $('header').outerHeight() + 30;
@@ -172,7 +198,22 @@ $(function() {
 		$("html, body").animate({scrollTop:position}, 500);
 	}
 
+  // サイドバーアーカイブのトグル実装と矢印アニメーション発火
+  $(".sideber__year").on("click", function() {
+    $(this).next().slideToggle();
+    if ($(this).hasClass('is-open')) {
+      $(this).removeClass('is-open');
+    } else {
+      $(this).addClass('is-open');
+    }
+  });
+
+  
 });
+
+
+
+
 
 
 
