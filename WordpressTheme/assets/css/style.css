@@ -1328,10 +1328,11 @@ footer {
 }
 
 .footer__pageTop {
+	bottom: 20px;
 	display: inline-block;
-	position: absolute;
+	position: fixed;
 	right: 0.9375rem;
-	top: -4.0625rem;
+	z-index: 1000;
 }
 
 .footer__content {
@@ -3148,6 +3149,10 @@ textarea {
 	color: #fff;
 }
 
+body {
+	position: relative;
+}
+
 .top-btn {
 	border: 1px solid #408F95;
 	border-radius: 50%;
@@ -4045,11 +4050,6 @@ footer {
 	max-width: 70.375rem;
 	padding-left: 25px;
 	padding-right: 25px;
-}
-
-.footer__pageTop {
-	right: 1.1875rem;
-	top: -6.125rem;
 }
 
 .footer__content {

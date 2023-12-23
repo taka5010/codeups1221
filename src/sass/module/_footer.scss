@@ -28,14 +28,18 @@ footer {
 
 .footer__pageTop {
   display: inline-block;
-  position: absolute;
-  top: rem(-65);
+  // position: absolute;
+  // top: rem(-65);
+  // right: rem(15);
+  // @include mq(md) {
+  //   top: rem(-98);
+  //   right: rem(19);
+  // }
+  position: fixed;
   right: rem(15);
-  @include mq(md) {
-    top: rem(-98);
-    right: rem(19);
-  }
-  // right: 0;
+  bottom: 20px;
+  z-index: 1000;
+
 }
 
 .footer__content {

@@ -208,8 +208,48 @@ $(function() {
     }
   });
 
-  
 });
+
+// ページトップボタンを右下に固定。footer上で止まる
+$(function () {
+  const pageTop = $(".footer__pageTop");
+  pageTop.hide();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      pageTop.fadeIn();
+    } else {
+      pageTop.fadeOut();
+    }
+  });
+  pageTop.click(function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0,
+      },
+      500
+    );
+    return false;
+  });
+  $(".footer__pageTop").hide();
+  $(window).on("scroll", function () {
+    var scrollHeight = $(document).height();
+    var scrollPosition = $(window).height() + $(window).scrollTop();
+    var footHeight = $("footer").innerHeight();
+    if (scrollHeight - scrollPosition <= footHeight) {
+      $(".footer__pageTop").css({
+        position: "absolute",
+        bottom: footHeight + 20,
+      });
+    } else {
+      $(".footer__pageTop").css({
+        position: "fixed",
+        bottom: "20px",
+      });
+    }
+  });
+});
+
+
 
 
 
