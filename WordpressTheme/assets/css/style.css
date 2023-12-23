@@ -342,30 +342,7 @@ a {
 }
 
 .about-gallery__items {
-	grid-gap: 0.5rem;
-	display: grid;
-	gap: 0.5rem;
-	grid-auto-flow: dense;
 	margin-top: 2.375rem;
-}
-
-.about-gallery__item:nth-child(6n+1),
-.about-gallery__item:nth-child(6n+6) {
-	grid-row: span 2;
-}
-
-.about-gallery__item:nth-child(6n+2),
-.about-gallery__item:nth-child(6n+3),
-.about-gallery__item:nth-child(6n+4),
-.about-gallery__item:nth-child(6n+5) {
-	grid-row: span 1;
-}
-
-.about-gallery__item:nth-child(6n+1) img,
-.about-gallery__item:nth-child(6n+6) img {
-	aspect-ratio: 345/524;
-	height: 100%;
-	width: 100%;
 }
 
 .about-gallery__fixed {
@@ -374,7 +351,7 @@ a {
 	width: 100%;
 }
 
-.about-gallery {
+.about-gallery-layout {
 	margin-top: 2.5rem;
 }
 
@@ -1596,6 +1573,32 @@ footer {
 	top: 50%;
 	transform: translateY(-50%) rotate(-45deg);
 	width: 1rem;
+}
+
+.gallery {
+	grid-gap: 0.5rem;
+	display: grid;
+	gap: 0.5rem;
+	grid-auto-flow: dense;
+}
+
+.gallery__item:nth-child(6n+1),
+.gallery__item:nth-child(6n+6) {
+	grid-row: span 2;
+}
+
+.gallery__item:nth-child(6n+2),
+.gallery__item:nth-child(6n+3),
+.gallery__item:nth-child(6n+4),
+.gallery__item:nth-child(6n+5) {
+	grid-row: span 1;
+}
+
+.gallery__item:nth-child(6n+1) img,
+.gallery__item:nth-child(6n+6) img {
+	aspect-ratio: 345/524;
+	height: 100%;
+	width: 100%;
 }
 
 .hamburger {
@@ -3556,32 +3559,11 @@ html {
 	max-width: 25rem;
 }
 
-.about-gallery__items {
-	grid-template-columns: repeat(11, 1fr);
-}
-
-.about-gallery__item:nth-child(6n+1),
-.about-gallery__item:nth-child(6n+6) {
-	grid-column: span 5;
-}
-
-.about-gallery__item:nth-child(6n+2),
-.about-gallery__item:nth-child(6n+3),
-.about-gallery__item:nth-child(6n+4),
-.about-gallery__item:nth-child(6n+5) {
-	grid-column: span 6;
-}
-
-.about-gallery__item:nth-child(6n+1) img,
-.about-gallery__item:nth-child(6n+6) img {
-	aspect-ratio: 492/746;
-}
-
 .about__footer {
 	margin-top: 10.125rem;
 }
 
-.about-gallery {
+.about-gallery-layout {
 	margin-top: 7.375rem;
 }
 
@@ -4111,6 +4093,27 @@ footer {
 .form__confirmation {
 	margin-top: 4.375rem;
 	text-align: center;
+}
+
+.gallery {
+	grid-template-columns: repeat(11, 1fr);
+}
+
+.gallery__item:nth-child(6n+1),
+.gallery__item:nth-child(6n+6) {
+	grid-column: span 5;
+}
+
+.gallery__item:nth-child(6n+2),
+.gallery__item:nth-child(6n+3),
+.gallery__item:nth-child(6n+4),
+.gallery__item:nth-child(6n+5) {
+	grid-column: span 6;
+}
+
+.gallery__item:nth-child(6n+1) img,
+.gallery__item:nth-child(6n+6) img {
+	aspect-ratio: 492/746;
 }
 
 header {
