@@ -650,9 +650,9 @@ a {
 	width: 1.125rem;
 }
 
-.blog-article__img,
-.blog-article__text,
-.blog-article__items {
+.blog-article figure,
+.blog-article p,
+.blog-article ul {
 	margin-top: 1.5rem;
 }
 
@@ -3776,9 +3776,9 @@ html {
 	padding-bottom: 0;
 }
 
-.blog-article__img,
-.blog-article__text,
-.blog-article__items {
+.blog-article figure,
+.blog-article p,
+.blog-article ul {
 	margin-top: 2.375rem;
 }
 
