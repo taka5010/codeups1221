@@ -1,17 +1,7 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
-    
-    // $('.js-hamburger').on('click', function () {
-    //   $("body").toggleClass("active");
-    //   if ($('.js-hamburger').hasClass('is-open')) {
-    //     $('.js-drawer-menu').fadeOut();
-    //     $(this).removeClass('is-open');
-    //   } else {
-    //     $('.js-drawer-menu').fadeIn();
-    //     $(this).addClass('is-open');
-    //   }
-    // });
+
 //ハンバーガーメニュークリックでメニューのモーダル
     $('.js-hamburger').on('click', function () {
       if ($('.js-hamburger').hasClass('is-open')) {
@@ -150,15 +140,8 @@ $(function() {
   //   $(window).scrollTop(scrollPosition);
   // });
 
-  // campaignページ・voiceページのメニューのハイライト実装
-  var items = $('.contents-menu__item');
-  $(items[1]).addClass('active');
-  items.each(function() {
-      $(this).on('click', function() {
-          items.removeClass('active');
-          $(this).addClass('active');
-      });
-  });
+  
+
 
   //faq-page ----------------------------
   let accordionDetails = '.js-faq-item';
@@ -256,7 +239,21 @@ $(function () {
       });
     }
   });
+
+  // campaignページ・voiceページのメニューのハイライト実装
+  var items = $('.contents-menu__item');
+var activeItemIndex = window.location.search.split('activeItem=')[1] || 0;
+$(items[activeItemIndex]).addClass('active');
+items.each(function() {
+    $(this).on('click', function() {
+        items.removeClass('active');
+        $(this).addClass('active');
+        window.history.pushState({}, '', '?activeItem=' + items.index(this));
+    });
 });
+
+});
+
 
 
 
