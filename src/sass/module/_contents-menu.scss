@@ -23,10 +23,16 @@
 }
 
 .contents-menu__item {
-    padding: 6px 25px;
     border: 1px solid $green;
     white-space: nowrap;
     background-color: $white;
+}
+
+.contents-menu__item a {
+    display: block;
+    padding: 6px 25px;
+    height: 100%;
+    width: 100%;
 }
 
 .contents-menu__item:hover,
@@ -34,5 +40,4 @@
     background-color: $green;
     color: $white;
     transition: 0.5s;
-    
 }

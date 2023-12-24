@@ -206,6 +206,14 @@ jQuery(function ($) {
       $(this).addClass('is-open');
     }
   });
+  var items = $('.wp-pagenavi span');
+  $(items[1]).addClass('current');
+  items.each(function () {
+    $(this).on('click', function () {
+      items.removeClass('current');
+      $(this).addClass('current');
+    });
+  });
 });
 
 // ページトップボタンを右下に固定。footer上で止まる

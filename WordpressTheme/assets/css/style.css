@@ -602,27 +602,42 @@ a {
 	font-size: 0.875rem;
 }
 
-.blog-article__header {
+.blog-article h1 {
 	border-bottom: 0.0625rem solid #408F95;
 	font-size: 1.5rem;
 	font-weight: 500;
 	padding-bottom: 0.3125rem;
 }
 
-.blog-article__img,
-.blog-article__text,
-.blog-article__items {
-	margin-top: 1.5rem;
+.blog-article figure {
+	position: relative;
 }
 
-.blog-article__lists li {
+.blog-article figure::before {
+	content: "";
+	display: block;
+	padding-top: 66.9565217391%;
+}
+
+.blog-article img {
+	-o-object-fit: cover;
+	height: 100%;
+	left: 50%;
+	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.blog-article li {
 	margin-top: 0.25rem;
 	padding-left: 1.25rem;
 	padding-left: 1.6875rem;
 	position: relative;
 }
 
-.blog-article__lists li::before {
+.blog-article li::before {
 	background-image: url(../images/common/hitode_logo.png);
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -633,6 +648,12 @@ a {
 	top: 50%;
 	transform: translateY(-50%);
 	width: 1.125rem;
+}
+
+.blog-article__img,
+.blog-article__text,
+.blog-article__items {
+	margin-top: 1.5rem;
 }
 
 .blog-card {
@@ -1194,8 +1215,14 @@ a {
 .contents-menu__item {
 	background-color: #fff;
 	border: 1px solid #408F95;
-	padding: 6px 25px;
 	white-space: nowrap;
+}
+
+.contents-menu__item a {
+	display: block;
+	height: 100%;
+	padding: 6px 25px;
+	width: 100%;
 }
 
 .contents-menu__item:hover,
@@ -1580,6 +1607,10 @@ footer {
 	display: grid;
 	gap: 0.5rem;
 	grid-auto-flow: dense;
+}
+
+.gallery__item {
+	cursor: pointer;
 }
 
 .gallery__item:nth-child(6n+1),
@@ -3740,7 +3771,7 @@ html {
 	margin-top: 2.5rem;
 }
 
-.blog-article__header {
+.blog-article h1 {
 	font-size: 2rem;
 	padding-bottom: 0;
 }
