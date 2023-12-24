@@ -153,14 +153,14 @@ jQuery(function ($) {
   // });
 
   // campaignページ・voiceページのメニューのハイライト実装
-  // var items = $('.contents-menu__item');
-  // $(items[1]).addClass('active');
-  // items.each(function() {
-  //     $(this).on('click', function() {
-  //         items.removeClass('active');
-  //         $(this).addClass('active');
-  //     });
-  // });
+  var items = $('.contents-menu__item');
+  $(items[1]).addClass('active');
+  items.each(function () {
+    $(this).on('click', function () {
+      items.removeClass('active');
+      $(this).addClass('active');
+    });
+  });
 
   //faq-page ----------------------------
   var accordionDetails = '.js-faq-item';
@@ -249,28 +249,5 @@ $(function () {
         bottom: "20px"
       });
     }
-  });
-});
-
-// $(document).on('ready pjax:complete', function() {
-//   var items = $('.contents-menu__item');
-//   $(items[0]).addClass('active');
-//   items.each(function() {
-//     $(this).on('click', function() {
-//       items.removeClass('active');
-//       $(this).addClass('active');
-//     });
-//   });
-// });
-
-$(document).on('ready pjax:complete', function () {
-  var items = $('.contents-menu__item');
-  // 他のページから遷移してきたときにitems[1]の背景色を緑にする
-  $(items[1]).addClass('active');
-  items.each(function () {
-    $(this).on('click', function () {
-      items.removeClass('active');
-      $(this).addClass('active');
-    });
   });
 });
