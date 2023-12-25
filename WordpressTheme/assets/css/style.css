@@ -557,7 +557,7 @@ a {
 	text-align: center;
 }
 
-.article-card {
+.article-card a {
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
 	display: flex;
 	margin-left: auto;
@@ -3240,6 +3240,10 @@ body {
 }
 
 .voice-card__headerLeft {
+	border-bottom: 1px solid #408F95;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 	max-width: 47.9233226837%;
 	width: 100%;
 }
@@ -3259,7 +3263,6 @@ body {
 }
 
 .voice-card__title {
-	border-bottom: 1px solid #408F95;
 	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.4;

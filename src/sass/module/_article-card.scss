@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.article-card {
+.article-card  a{
     display: flex;
     // max-width: calc( 294 / 345 * 100%);
     width: 100%;
