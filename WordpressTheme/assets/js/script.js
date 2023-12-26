@@ -176,6 +176,7 @@ jQuery(function ($) {
       scrollTop: position
     }, 500);
   }
+  ;
 
   // サイドバーアーカイブのトグル実装と矢印アニメーション発火
   $(".sideber__year").on("click", function () {
@@ -186,7 +187,7 @@ jQuery(function ($) {
       $(this).addClass('is-open');
     }
   });
-  var items = $('.wp-pagenavi span');
+  var items = $('.wp-pagenavi a');
   $(items[1]).addClass('current');
   items.each(function () {
     $(this).on('click', function () {

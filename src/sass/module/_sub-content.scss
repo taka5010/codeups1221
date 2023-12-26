@@ -3,34 +3,14 @@
 .sub-content {
     position: relative;
 }
-
-
-
-// .sub-content.sub-blog {
-//     margin-top: rem(50);
-//     @include mq(md) {
-//         margin-top: rem(102);
-//     }
-// }
-
-// .sub-content.sub-contact {
-//     margin-top: rem(52);
-//     @include mq(md) {
-//         margin-top: rem(102);
-//     }
-// }
-// .sub-content.sub-thanks {
-//     margin-top: rem(50);
-//     @include mq(md) {
-//         margin-top: rem(102);
-//     }
-// }
-// .sub-content.sub-sitemap {
-//     margin-top: rem(50);
-//     @include mq(md) {
-//         margin-top: rem(102);
-//     }
-// }
+.sub-content__inner.inner {
+    padding-left: rem(15);
+    padding-right: rem(15);
+    @include mq(md) {
+        padding-left: rem(25);
+        padding-right: rem(25);
+    }
+}
 
 .sub-content::before {
     position: absolute;

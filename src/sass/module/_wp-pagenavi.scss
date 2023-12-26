@@ -2,7 +2,7 @@
 
 .wp-pagenavi {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -25,5 +25,12 @@
 .wp-pagenavi a.current{
     color: #fff;
     background-color: $green;
+}
+
+.wp-pagenavi a.previouspostslink {
+    margin-right: rem(40);
+}
+.wp-pagenavi a.nextpostslink {
+    margin-left: rem(40);
 }
 
