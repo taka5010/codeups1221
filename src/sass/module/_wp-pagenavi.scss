@@ -21,7 +21,9 @@
     border: 1px solid $green;
 }
 
-.wp-pagenavi span.current {
+.wp-pagenavi a:hover,
+.wp-pagenavi a.current{
     color: #fff;
     background-color: $green;
 }
+

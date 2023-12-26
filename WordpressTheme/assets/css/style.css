@@ -726,14 +726,11 @@ a {
 	transition: 0.5s all;
 }
 
-.blog-cards .blog-card:nth-child(n+2) {
-	margin-top: 2.5rem;
-}
-
-.blog-cards--sub {
+.blog-cards {
 	grid-row-gap: 2.5rem;
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(1, 1fr);
 	row-gap: 2.5rem;
 }
 
@@ -3384,7 +3381,8 @@ body {
 	white-space: nowrap;
 }
 
-.wp-pagenavi span.current {
+.wp-pagenavi a:hover,
+.wp-pagenavi a.current {
 	background-color: #408F95;
 	color: #fff;
 }
@@ -3787,24 +3785,13 @@ html {
 }
 
 .blog-cards {
-	grid-column-gap: 2.5rem;
 	-moz-column-gap: 2.5rem;
 	column-gap: 2.5rem;
-	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-}
-
-.blog-cards .blog-card:nth-child(n+2) {
-	margin-top: 0;
-}
-
-.blog-cards .blog-card:nth-child(n+4) {
-	margin-top: 1.25rem;
+	row-gap: 1.25rem;
 }
 
 .blog-cards--sub {
-	-moz-column-gap: 2.5rem;
-	column-gap: 2.5rem;
 	grid-template-columns: repeat(2, 1fr);
 	row-gap: 4.375rem;
 }
