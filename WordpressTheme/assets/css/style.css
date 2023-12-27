@@ -651,9 +651,7 @@ a {
 	width: 1.125rem;
 }
 
-.blog-article figure,
-.blog-article p,
-.blog-article ul {
+.blog-article > * {
 	margin-top: 1.5rem;
 }
 
@@ -2187,8 +2185,8 @@ button,
 	margin-top: -0.1em;
 	opacity: 1;
 	position: absolute;
-	top: 50%; /*チェックマークじゃない場合は以下を変更する*/
-	transform: translateY(-50%) rotate(-45deg);
+	top: 0.625rem; /*チェックマークじゃない場合は以下を変更する*/
+	transform: translateY(0%) rotate(-45deg);
 	width: 0.6125rem;
 }
 
@@ -3003,23 +3001,20 @@ textarea {
 
 .sub-privacy__inner.inner {
 	line-height: 2;
+	position: relative;
 }
 
-.sub-privacy__unit {
+.sub-sentence p {
 	margin-top: 2.0625rem;
 }
 
-.sub-privacy__title {
+.sub-sentence h2 {
 	font-size: 1.5rem;
 	font-weight: 500;
 }
 
-.sub-privacy ol {
+.sub-sentence ol {
 	padding-left: 1.4375rem;
-}
-
-.sub-privacy__contact {
-	margin-top: 5.25rem;
 }
 
 .sub-sitemap__inner.inner {
@@ -3047,26 +3042,13 @@ textarea {
 	margin-top: 5.25rem;
 }
 
-.sub-terms__content {
+.sub-terms__inner.inner {
 	line-height: 2;
 	position: relative;
 }
 
-.sub-terms__unit {
-	margin-top: 2.0625rem;
-}
-
-.sub-terms__title {
-	font-size: 1.5rem;
-	font-weight: 500;
-}
-
 .sub-terms ol {
-	padding-left: 1.4375rem;
-}
-
-.sub-terms__contact {
-	margin-top: 6.25rem;
+	margin-top: 2.0625rem;
 }
 
 .sub-thanks {
@@ -3752,9 +3734,7 @@ html {
 	padding-bottom: 0;
 }
 
-.blog-article figure,
-.blog-article p,
-.blog-article ul {
+.blog-article > * {
 	margin-top: 2.375rem;
 }
 
@@ -4541,8 +4521,9 @@ select {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 43.75rem;
-	padding: 0;
+	padding-bottom: 0;
 	padding-top: 0rem;
+	padding-top: 0;
 	width: 100%;
 }
 
@@ -4701,8 +4682,8 @@ select {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 43.75rem;
-	padding-left: 0;
-	padding-right: 0;
+	padding-bottom: 0;
+	padding-top: 0;
 }
 
 .sub-price__contact {
@@ -4716,12 +4697,8 @@ select {
 	width: 100%;
 }
 
-.sub-privacy__title {
+.sub-sentence h2 {
 	font-size: 2rem;
-}
-
-.sub-privacy__contact {
-	margin-top: 8.25rem;
 }
 
 .sub-sitemap__inner.inner {
@@ -4738,14 +4715,6 @@ select {
 	margin-right: auto;
 	max-width: 50rem;
 	width: 100%;
-}
-
-.sub-terms__title {
-	font-size: 2rem;
-}
-
-.sub-terms__contact {
-	margin-top: 8.25rem;
 }
 
 .sub-thanks__footer {

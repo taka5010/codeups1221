@@ -1,10 +1,9 @@
 @use "global" as *;
 
-.sub-privacy {
-}
 
 .sub-privacy__inner.inner {
     line-height: 2;
+    position: relative;
     @include mq(md) {
         max-width: rem(800);
         width: 100%;
@@ -13,25 +12,3 @@
     }
 }
 
-.sub-privacy__unit {
-    margin-top: rem(33);
-}
-
-.sub-privacy__title {
-    font-size: rem(24);
-    font-weight: $medium;
-    @include mq(md) {
-        font-size: rem(32);
-    }
-}
-
-.sub-privacy ol {
-    padding-left: rem(23);
-}
-
-.sub-privacy__contact {
-    margin-top: rem(84);
-    @include mq(md) {
-        margin-top: rem(132);
-    }
-}

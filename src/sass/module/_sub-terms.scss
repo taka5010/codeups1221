@@ -1,15 +1,8 @@
 @use "global" as *;
 
-.sub-terms {
-}
-
-.sub-terms__content {
+.sub-terms__inner.inner {
     line-height: 2;
     position: relative;
-
-}
-
-.sub-terms__inner.inner {
     @include mq(md) {
         max-width: rem(800);
         width: 100%;
@@ -18,31 +11,9 @@
     }
 }
 
-.sub-terms__unit {
-    margin-top: rem(33);
-
-}
-
-.sub-terms__title {
-    font-size: rem(24);
-    font-weight: $medium;
-    @include mq(md) {
-        font-size: rem(32);
-    }
-}
-
-.sub-terms__text {
-
-}
-
 .sub-terms ol {
-    padding-left: rem(23);
+    margin-top: rem(33);
 }
 
-.sub-terms__contact {
-    margin-top: rem(100);
-    @include mq(md) {
-        margin-top: rem(132);
-    }
 
-}
+

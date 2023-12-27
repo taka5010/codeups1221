@@ -58,9 +58,7 @@
     }
 }
 
-.blog-article figure,
-.blog-article p,
-.blog-article ul {
+.blog-article > * {
     margin-top: rem(24);
     @include mq(md) {
         margin-top: rem(38);

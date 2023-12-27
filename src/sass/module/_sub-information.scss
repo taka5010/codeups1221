@@ -1,15 +1,8 @@
 @use "global" as *;
 
 .sub-information {
-  // position: relative;
-  // margin-top: rem(50);
-  // padding-top: rem(70);
-  // padding-bottom: rem(84);
   z-index: initial;
   @include mq(md) {
-    // margin-top: rem(50);
-    // padding-top: rem(100);
-    // padding-bottom: rem(102);
     z-index: initial;
   }
 }
